@@ -15,5 +15,7 @@
     "ecmaVersion": 12
   },
   "plugins": ["html"],
-  "rules": {}
+  "rules": {
+    "linebreak-style":"off"
+  }
 }

@@ -1,4 +1,4 @@
-{
+{ 
   "singleQuote": true,
   "proseWrap": "always",
   "overrides": [
@@ -7,8 +7,10 @@
       "parser": "markdown-eslint-parser",
       "rules": {
         "prettier/prettier": [
-          "error",
-          {
+           
+            "error",
+          { 
+            "endOfLine" : "crlf",
             "parser": "markdown"
           }
         ]
