@@ -38,10 +38,14 @@ jobs:
             machine api.heroku.com
               login $HEROKU_EMAIL
               password $HEROKU_API_KEY
+              appname $HEROKU_APP_NAME
             machine git.heroku.com
               login $HEROKU_EMAIL
               password $HEROKU_API_KEY
+              appname $HEROKU_APP_NAME
           EOF
         env:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
           HEROKU_EMAIL: ${{ secrets.HEROKU_EMAIL }}
+          HEROKU_APP_NAME: ${{ secrets.HEROKU_APP_NAME }}
+
