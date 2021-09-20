@@ -1,5 +1,12 @@
 version: '3'
-
+# npm run db-up
+# docker ps = para veer lso contenedores
+# docker exec -it "NAMES" psql -U postgres = para que docker acceda al servicio dentro del contenedor (en este caso el servidor de la BD) y trabaje directamente con esa bd
+# docker exec -it reg003-chat-app_postgres_1 psql -U postgres 
+# Ahora puedo utilizar comandos para interactuar con postgres desde el terminal (lista de las bd): \l
+# \c 'nombre de la bd' = para acceder a la bd
+# \dt para ver la lista de los datos de la bd (tablas)
+# 
 services:
   postgres:
     image: 'postgres:13-alpine'
