@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "db-up": "docker-compose up -d",
     "db-status": "docker-compose ps",
@@ -16,6 +17,7 @@
     "express": "^4.17.1",
     "http": "*",
     "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.12",
     "pg": "^8.7.1",
     "socket.io": "^4.1.2"
   },

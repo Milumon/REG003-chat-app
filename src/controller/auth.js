@@ -12,6 +12,7 @@ const pool = new Pool({
 });
 
 const { secret } = config;
+
 module.exports = {
   validateUser: async (req, resp, next) => {
     const { name, password } = req.body;
